@@ -155,10 +155,10 @@ export class Application extends ChildableComponent<Application, AbstractCompone
      * @param src  A list of source that should be compiled and converted.
      * @returns An instance of ProjectReflection on success, NULL otherwise.
      */
-    public convert(src: string[]): ProjectReflection {
+    public convert(src: string[], program?: typescript.Program): ProjectReflection {
         this.logger.writeln('Using TypeScript %s from %s', this.getTypeScriptVersion(), this.getTypeScriptPath());
 
-        const result = this.converter.convert(src);
+        const result = this.converter.convert(src, program);
         if (result.errors && result.errors.length) {
             this.logger.diagnostics(result.errors);
             if (this.ignoreCompilerErrors) {

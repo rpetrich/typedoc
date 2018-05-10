@@ -266,12 +266,14 @@ export class Converter extends ChildableComponent<Application, ConverterComponen
      *
      * @param fileNames  Array of the file names that should be compiled.
      */
-    convert(fileNames: string[]): ConverterResult {
+    convert(fileNames: string[], program?: ts.Program): ConverterResult {
         for (let i = 0, c = fileNames.length; i < c; i++) {
             fileNames[i] = normalizePath(_ts.normalizeSlashes(fileNames[i]));
         }
 
-        const program = ts.createProgram(fileNames, this.application.options.getCompilerOptions(), this.compilerHost);
+        if (typeof program === 'undefined') {
+            program = ts.createProgram(fileNames, this.application.options.getCompilerOptions(), this.compilerHost);
+        }
         const checker = program.getTypeChecker();
         const context = new Context(this, fileNames, checker, program);
 
