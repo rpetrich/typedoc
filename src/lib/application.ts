@@ -144,9 +144,7 @@ export class Application extends ChildableComponent<Application, AbstractCompone
     }
 
     public getTypeScriptVersion(): string {
-        const tsPath = this.getTypeScriptPath();
-        const json = JSON.parse(FS.readFileSync(Path.join(tsPath, '..', 'package.json'), 'utf8'));
-        return json.version;
+        return typescript.version;
     }
 
     /**
