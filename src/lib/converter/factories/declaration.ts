@@ -40,6 +40,10 @@ export function createDeclaration(context: Context, node: ts.Node, kind: Reflect
             return null;
         }
     }
+    name = context.converter.renamer(name, kind);
+    if (!name) {
+        return null;
+    }
 
     const modifiers = ts.getCombinedModifierFlags(node);
 

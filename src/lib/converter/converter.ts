@@ -4,7 +4,7 @@ import * as _ from 'lodash';
 
 import { Application } from '../application';
 import { ParameterType } from '../utils/options/declaration';
-import { Reflection, Type, ProjectReflection } from '../models/index';
+import { Reflection, ReflectionKind, Type, ProjectReflection } from '../models/index';
 import { Context } from './context';
 import { ConverterComponent, ConverterNodeComponent, ConverterTypeComponent, TypeTypeConverter, TypeNodeConverter } from './components';
 import { CompilerHost } from './utils/compiler-host';
@@ -24,6 +24,10 @@ export interface ConverterResult {
      * The resulting project reflection.
      */
     project: ProjectReflection;
+}
+
+function passthrough(name: string) {
+    return name;
 }
 
 /**
@@ -80,6 +84,8 @@ export class Converter extends ChildableComponent<Application, ConverterComponen
         type: ParameterType.Boolean
     })
     excludeProtected: boolean;
+
+    renamer: (name: string, kind: ReflectionKind) => string | null = passthrough;
 
     private compilerHost: CompilerHost;
 
