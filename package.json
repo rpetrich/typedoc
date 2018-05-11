@@ -75,6 +75,7 @@
   "scripts": {
     "test": "mocha -t 10000 dist/test",
     "build": "grunt build_and_test",
+    "prepare": "grunt",
     "prepublish": "npm run build"
   },
   "keywords": [
