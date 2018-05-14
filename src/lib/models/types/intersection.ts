@@ -68,11 +68,6 @@ export class IntersectionType extends Type {
      * Return a string representation of this type.
      */
     toString() {
-        const names: string[] = [];
-        this.types.forEach((element) => {
-            names.push(element.toString());
-        });
-
-        return names.join(' & ');
+        return this.types.map((element) => element.toString()).join(' & ');
     }
 }

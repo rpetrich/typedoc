@@ -68,11 +68,6 @@ export class TupleType extends Type {
      * Return a string representation of this type.
      */
     toString() {
-        const names: string[] = [];
-        this.elements.forEach((element) => {
-            names.push(element.toString());
-        });
-
-        return '[' + names.join(', ') + ']';
+        return '[' + this.elements.map((element) => element.toString()).join(', ') + ']';
     }
 }

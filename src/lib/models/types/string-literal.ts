@@ -62,6 +62,6 @@ export class StringLiteralType extends Type {
      * Return a string representation of this type.
      */
     toString(): string {
-        return '"' + this.value + '"';
+        return JSON.stringify(this.value);
     }
 }
