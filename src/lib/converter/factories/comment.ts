@@ -88,9 +88,6 @@ export function getRawComment(node: ts.Node): string {
     if (comments && comments.length) {
         let comment: ts.CommentRange;
         if (node.kind === ts.SyntaxKind.SourceFile) {
-            if (comments.length === 1) {
-                return null;
-            }
             comment = comments[0];
         } else {
             comment = comments[comments.length - 1];
