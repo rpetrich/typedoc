@@ -76,8 +76,8 @@ export const getJSDocCommentRanges: (node: ts.Node, text: string) => any = steal
 export const isBindingPattern: (node: ts.Node) => node is ts.BindingPattern = stealInternal('isBindingPattern');
 
 // https://github.com/Microsoft/TypeScript/blob/v2.1.4/src/compiler/utilities.ts#L1729
-export const getClassExtendsHeritageClauseElement: (node: ts.ClassLikeDeclaration | ts.InterfaceDeclaration) => any =
-  stealInternal('getClassExtendsHeritageClauseElement');
+export const getEffectiveBaseTypeNode: (node: ts.ClassLikeDeclaration | ts.InterfaceDeclaration) => any =
+  stealInternal('getEffectiveBaseTypeNode');
 
 // https://github.com/Microsoft/TypeScript/blob/v2.1.4/src/compiler/utilities.ts#L1734
 export const getClassImplementsHeritageClauseElements: (node: ts.ClassLikeDeclaration) => any = stealInternal('getClassImplementsHeritageClauseElements');
@@ -114,6 +114,7 @@ export interface CommandLineOption {
   paramType: DiagnosticsEnumValue;
 }
 
+// tslint:disable-next-line:variable-name
 export const Diagnostics: {
   [key: string]: DiagnosticsEnumValue;
   FILE: DiagnosticsEnumValue;
