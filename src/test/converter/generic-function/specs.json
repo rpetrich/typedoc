@@ -13,6 +13,25 @@
         "isExported": true
       },
       "originalName": "%BASE%/generic-function/generic-function.ts",
+      "comment": {
+        "shortText": "Generic function short text.",
+        "tags": [
+          {
+            "tag": "param",
+            "text": "Generic function type parameter.",
+            "param": "T"
+          },
+          {
+            "tag": "param",
+            "text": "Generic function parameter.",
+            "param": "value"
+          },
+          {
+            "tag": "returns",
+            "text": "Generic function return value.\n"
+          }
+        ]
+      },
       "children": [
         {
           "id": 6,
@@ -112,7 +131,6 @@
                   "id": 4,
                   "name": "T",
                   "kind": 131072,
-                  "kindString": "Type parameter",
                   "flags": {},
                   "comment": {
                     "text": "Generic function type parameter."
@@ -128,7 +146,6 @@
                   "id": 5,
                   "name": "value",
                   "kind": 32768,
-                  "kindString": "Parameter",
                   "flags": {},
                   "comment": {
                     "text": "Generic function parameter."

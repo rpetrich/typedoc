@@ -13,6 +13,10 @@
         "isExported": true
       },
       "originalName": "%BASE%/this/this.ts",
+      "comment": {
+        "shortText": "ChainClass comment short text.",
+        "text": "ChainClass comment text.\n"
+      },
       "children": [
         {
           "id": 2,
@@ -41,7 +45,6 @@
                   "id": 4,
                   "name": "chain",
                   "kind": 4096,
-                  "kindString": "Call signature",
                   "flags": {},
                   "comment": {
                     "shortText": "Chain method that returns this."

@@ -13,6 +13,9 @@
         "isExported": true
       },
       "originalName": "%BASE%/union-or-intersection/union-or-intersection.ts",
+      "comment": {
+        "shortText": "First type for union or intersection type tests."
+      },
       "children": [
         {
           "id": 2,
@@ -71,7 +74,6 @@
           "id": 4,
           "name": "SecondType",
           "kind": 256,
-          "kindString": "Interface",
           "flags": {
             "isExported": true
           },
@@ -83,7 +85,6 @@
               "id": 5,
               "name": "secondProperty",
               "kind": 1024,
-              "kindString": "Property",
               "flags": {
                 "isExported": true
               },
@@ -92,7 +93,7 @@
               },
               "sources": [
                 {
-                  "fileName": "union-or-intersection.ts",
+                  "fileName": "%BASE%/union-or-intersection/union-or-intersection.ts",
                   "line": 20,
                   "character": 18
                 }
@@ -103,18 +104,9 @@
               }
             }
           ],
-          "groups": [
-            {
-              "title": "Properties",
-              "kind": 1024,
-              "children": [
-                5
-              ]
-            }
-          ],
           "sources": [
             {
-              "fileName": "union-or-intersection.ts",
+              "fileName": "%BASE%/union-or-intersection/union-or-intersection.ts",
               "line": 15,
               "character": 27
             }
@@ -171,8 +163,7 @@
                           },
                           {
                             "type": "reference",
-                            "name": "SecondType",
-                            "id": 4
+                            "name": "SecondType"
                           }
                         ]
                       }
@@ -243,8 +234,7 @@
                   },
                   {
                     "type": "reference",
-                    "name": "SecondType",
-                    "id": 4
+                    "name": "SecondType"
                   }
                 ]
               }

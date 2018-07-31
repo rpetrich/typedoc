@@ -13,6 +13,9 @@
         "isExported": true
       },
       "originalName": "%BASE%/alias/alias.ts",
+      "comment": {
+        "shortText": "A type that describes a compare function, e.g. for array.sort()."
+      },
       "children": [
         {
           "id": 2,

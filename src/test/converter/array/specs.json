@@ -13,6 +13,9 @@
         "isExported": true
       },
       "originalName": "%BASE%/array/array.ts",
+      "comment": {
+        "shortText": "A custom array interface."
+      },
       "children": [
         {
           "id": 2,

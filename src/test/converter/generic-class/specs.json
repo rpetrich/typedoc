@@ -13,6 +13,16 @@
         "isExported": true
       },
       "originalName": "%BASE%/generic-class/generic-class.ts",
+      "comment": {
+        "shortText": "GenericClass short text.",
+        "tags": [
+          {
+            "tag": "param",
+            "text": "Generic parameter.\n",
+            "param": "T"
+          }
+        ]
+      },
       "children": [
         {
           "id": 2,
@@ -90,7 +100,6 @@
               "id": 4,
               "name": "value",
               "kind": 1024,
-              "kindString": "Property",
               "flags": {
                 "isProtected": true
               },
@@ -99,7 +108,7 @@
               },
               "sources": [
                 {
-                  "fileName": "generic-class.ts",
+                  "fileName": "%BASE%/generic-class/generic-class.ts",
                   "line": 9,
                   "character": 19
                 }
@@ -113,7 +122,6 @@
               "id": 5,
               "name": "values",
               "kind": 1024,
-              "kindString": "Property",
               "flags": {
                 "isProtected": true
               },
@@ -122,7 +130,7 @@
               },
               "sources": [
                 {
-                  "fileName": "generic-class.ts",
+                  "fileName": "%BASE%/generic-class/generic-class.ts",
                   "line": 14,
                   "character": 20
                 }
@@ -300,8 +308,7 @@
               },
               "inheritedFrom": {
                 "type": "reference",
-                "name": "GenericClass.value",
-                "id": 4
+                "name": "GenericClass.value"
               }
             },
             {
@@ -331,8 +338,7 @@
               },
               "inheritedFrom": {
                 "type": "reference",
-                "name": "GenericClass.values",
-                "id": 5
+                "name": "GenericClass.values"
               }
             },
             {

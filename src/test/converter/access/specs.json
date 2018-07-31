@@ -10,9 +10,13 @@
       "kind": 1,
       "kindString": "External module",
       "flags": {
+        "isPrivate": true,
         "isExported": true
       },
       "originalName": "%BASE%/access/access.ts",
+      "comment": {
+        "shortText": "A variable that is made private via comment."
+      },
       "children": [
         {
           "id": 2,

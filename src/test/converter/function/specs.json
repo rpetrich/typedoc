@@ -13,6 +13,9 @@
         "isExported": true
       },
       "originalName": "%BASE%/function/function.ts",
+      "comment": {
+        "shortText": "This is an internal function."
+      },
       "children": [
         {
           "id": 35,
@@ -176,7 +179,6 @@
           "id": 4,
           "name": "exportedFunction",
           "kind": 64,
-          "kindString": "Function",
           "flags": {
             "isExported": true
           },
@@ -185,7 +187,6 @@
               "id": 5,
               "name": "exportedFunction",
               "kind": 4096,
-              "kindString": "Call signature",
               "flags": {},
               "comment": {
                 "shortText": "This is a simple exported function."
@@ -198,7 +199,7 @@
           ],
           "sources": [
             {
-              "fileName": "function.ts",
+              "fileName": "%BASE%/function/function.ts",
               "line": 10,
               "character": 32
             }
